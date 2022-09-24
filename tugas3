@@ -1,0 +1,36 @@
+Jika diletakan didepan variabel, maka proses penambahan atau pengurangan akan dilakukan sesaat sebelum atau langsung pada saat menjumpai ekspresi ini, sehingga nilai variabel tadi akan langsung berubah begitu ekspresi ini ditemukan.
+Jika diletakan dibelakang variabel, maka proses penambahan atau pengurangan akan dilakukan setelah ekspresi ini dijumpai atau nilai variabel akan tetap pada saat ekspresi ini ditemukan.
+
+#include <iostream>
+#define phi 5.79258127
+using namespace std;
+int main()
+{
+float jari_jari, tinggi, volume, luas;
+jari_jari=8.0;
+tinggi=4;
+volume=phi*jari_jari*jari_jari*tinggi;
+luas=2*phi*jari_jari*tinggi;
+cout << "volume tabung="<<volume<<endl;
+cout<<"luas tabung="<<luas<<endl;
+getchar();
+  }
+  
+  #include <iostream> = header
+  using namespace std; = memberitahukan kepada kompiler bahwa kita akan menggunakan semua fungsi, class atau file yang terdapat pada memori
+  int main(){ = fungsi utama yang wajib dicantumkan.
+  // inisialisasi variabel = proses memberikan nilai awal (initial value) pada variabel dan ditunjukkan pada potongan kode setelah tanda '='
+  int x=50; = deklarasi tipe data integer untuk variabel a yang memiliki nilai
+  int a,b,c,d,e; = deklarasi tipe data integer untuk mendeklarasikan nilai a,b, c, dan d.
+  a = x > 5 + 5;
+b = x > 100;
+c = a && b;
+d = a || b;
+e = ! (c); = perintah untuk memproses operasi matematika dari angka yang sudah diinput.
+// output berupa 1 (benar) dan 0 (salah) = digunakan untuk membersihkan layar console (terminal) pada program C/C++.
+cout<<"\nNilai a = x > 5 + 5 = "<<a<<endl; = untuk menampilkan output nilai A sesuai dengan nilai yang sudah dideklarasikan.
+cout<<"\nNilai b = x > 100 = "<<b<<endl; = menampilkan output nilai A sesuai dengan nilai yang sudah dideklarasikan.
+cout<<"\nNilai c = a && b = "<<c<<endl; = menampilkan output nilai A = A+1
+cout<<"\nNilai d = a || b = "<<d<<endl; = untuk menampilkan output nilai B sesuai dengan nilai yang sudah dideklarasikan
+cout<<"\nNilai e = ! (c) = "<<e<<endl; = untuk menampilkan output nilai B sesuai dengan nilai yang sudah dideklarasikan.
+getchar(); = untuk membaca karakter dari standar input dan mengembalikan nilainya ke program.
